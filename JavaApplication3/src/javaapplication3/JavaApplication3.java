@@ -13,7 +13,7 @@ public class JavaApplication3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       System.out.println("this is a new message!");
+       System.out.println("This is a new message!");
     }
     
 }
