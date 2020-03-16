@@ -54,8 +54,7 @@ public class TestJavaInstructions {
         
         //test for instruction
         for(int numberOfLoops = 0; numberOfLoops < 5; numberOfLoops++){
-            System.out.println("number of loops = " +numberOfLoops);
-        
+            System.out.println("number of loops = " +numberOfLoops);        
         }
         
         //test for instruction for collections
