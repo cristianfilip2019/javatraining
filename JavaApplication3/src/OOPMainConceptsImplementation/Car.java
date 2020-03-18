@@ -37,7 +37,7 @@ public class Car implements Saleable, Rentable{
     public short getSpeed(){
         return(speed);
     }
-    public void setName(string newName){
+    public void setName(String newName){
         name = newName;
     }
     public void setColor(Color newColor){

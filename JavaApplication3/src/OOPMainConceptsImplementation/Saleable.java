@@ -11,7 +11,7 @@ package OOPMainConceptsImplementation;
  */
 public interface Saleable {
     /**
-     * 2const REC_SALE_PRICE is recommended price to sell
+     * @const REC_SALE_PRICE is recommended price to sell
      */
     public static final boolean SALEABLE = true;
     /**
