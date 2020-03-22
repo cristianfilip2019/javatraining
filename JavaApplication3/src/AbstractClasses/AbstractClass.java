@@ -6,22 +6,22 @@ package AbstractClasses;
  * @author servi
  */
 abstract class MyClass{
-    public void disp(){
+    public void concreteMethod(){
         System.out.println("concrete method of abstract class");
     }
-    abstract public void disp2();
+    abstract public void abstractMethod();
 }
 
 
 class AbstractClass extends MyClass{
-    public void disp2(){
+    public void abstractMethod(){
         System.out.println("implementing abstract method");
     }
 
     public static void main(String[] args) {
         AbstractClass obj = new AbstractClass();
-        obj.disp();
-        obj.disp2();
+        obj.concreteMethod();
+        obj.abstractMethod();
     }
     
 }
