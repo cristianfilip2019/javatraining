@@ -44,9 +44,11 @@ public class HelloWorldAnonymusClasses {
                 System.out.println("Hola " + name);
             }
         };
+        
         EnglishGreeting.greet();
         frenchGreeting.greetSomeone("Fred");
         spanishGreeting.greet();
+        frenchGreeting.greet();
     }
     
     public static void main(String[] args) {
