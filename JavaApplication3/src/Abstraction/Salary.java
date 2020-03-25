@@ -9,9 +9,8 @@ public class Salary extends Employee{
         setSalary(salary);
     }
     
-    //Whithin mailCheck of salary class
     public void mailCheck(){
-        System.out.println("Mailing ckeck to "  + getName() + " with salary "+ salary);
+        System.out.println("Mailing ckeck to "  + getName() + " with salary "+ salary + " to adress " + getAdress());
     }
     
     public double getSalary(){
@@ -22,10 +21,5 @@ public class Salary extends Employee{
         if(newSalary >= 0.0){
             salary = newSalary;
         }
-    }
-    
-    public double computePay(){
-        System.out.println("Computing salary pay for " + getName());
-        return salary/52;
     }
 }

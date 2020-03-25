@@ -12,17 +12,9 @@ public abstract class Employee {
         this.adress = adress;
         this.number = number;
     }
-     //Inside Employee computePay
-    public double computePay(){
-        return 0.0;
-    }
-    
+
     public void mailCheck(){
         System.out.println("Mailing a check to " + this.name + this.adress);
-    }
-    
-    public String toString(){
-        return name + " " + adress + " " + number;
     }
     
     public String getName(){
@@ -33,11 +25,15 @@ public abstract class Employee {
         return adress;
     }
     
-    public void setAdress(String newAdress){
+    /*public void setAdress(String newAdress){
         adress = newAdress;
-    }
+    }*/
     
     public int getNumber(){
         return number;
+    }
+    
+    public String toString(){
+        return name + " " + adress + " " + number;
     }
 }

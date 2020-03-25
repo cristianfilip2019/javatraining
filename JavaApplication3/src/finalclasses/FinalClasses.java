@@ -4,7 +4,7 @@ package finalclasses;
 
 public class FinalClasses {
     
-    public static final class Car{
+    public static /*final*/ class Car{
         public void move(){
             System.out.println("the car is moving");
         }

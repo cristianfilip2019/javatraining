@@ -17,6 +17,8 @@ public class Cars {
         System.out.println("Car brand - " + ford.getName());
         System.out.println("Color - " + ford.getColor());
         System.out.println("Speed - " + ford.getSpeed());
+        System.out.println(ford.getSalePrice());
+        System.out.println(ford.getDailyRentPrice());
     }
     
 }
