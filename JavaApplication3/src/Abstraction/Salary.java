@@ -1,7 +1,7 @@
 
 package Abstraction;
 
-public class Salary extends Employee{
+public final class Salary extends Employee{
     private double salary;
     
     public Salary(String name, String adress, int number, double salary){
@@ -9,6 +9,7 @@ public class Salary extends Employee{
         setSalary(salary);
     }
     
+    @Override
     public void mailCheck(){
         System.out.println("Mailing ckeck to "  + getName() + " with salary "+ salary + " to adress " + getAdress());
     }

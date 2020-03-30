@@ -3,7 +3,7 @@ package NestedClasses;
 
 
 public class LocalClassDemo {
-    private int x = 1;
+    private final int x = 1;
     
     public void doThings(){
         String name = "local variable";

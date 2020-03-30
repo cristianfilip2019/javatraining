@@ -6,7 +6,7 @@ package NestedClasses;
  * @author servi
  */
 public class InnerClass {
-    private int myVar=15;
+    private final int myVar=15;
     class MyInnerClassDemo{
         public void seeOuter(){
             System.out.println("value of my var is: "+ myVar);

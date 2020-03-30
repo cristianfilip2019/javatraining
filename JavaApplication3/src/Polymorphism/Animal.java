@@ -8,12 +8,14 @@ public class Animal {
 }
 
 class Pig extends Animal{
+    @Override
     public void animalSound(){
         System.out.println("the pig says: wee wee");
     }
 }
 
 class Dog extends Animal{
+    @Override
     public void animalSound(){
         System.out.println("the dog says: woof woof");
     }    

@@ -7,30 +7,26 @@ class Animal {
     public Animal(String color){
         this.color = color;
     }
-    
-    public String getColor(){
+        public String getColor(){
         return color;
     }   
 }
 
-class Dog extends Animal{
+final class Dog extends Animal{
     String race;
     
     public Dog(String color, String race){
         super(color);
         setRace(race);
     }
-    
-    public void printDog(){
+        public void printDog(){
         System.out.println(getColor());
         System.out.println(race);
     }
-    
-    public String getRace(){
+       public String getRace(){
         return race;
     }
-    
-    public void setRace(String newRace){
+        public void setRace(String newRace){
         race = newRace;
     }
 }

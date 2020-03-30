@@ -65,7 +65,7 @@ public class TestJavaInstructions {
         listOfIntegers.add(4);
         //display all elements of collection
         for(Integer currentElement:listOfIntegers){
-            System.out.println("Element value is " + currentElement.intValue());        
+            System.out.println("Element value is " + currentElement);        
         }       
     }
 }

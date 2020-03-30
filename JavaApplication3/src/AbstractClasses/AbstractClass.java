@@ -14,6 +14,7 @@ abstract class MyClass{
 
 
 class AbstractClass extends MyClass{
+    @Override
     public void abstractMethod(){
         System.out.println("implementing abstract method");
     }

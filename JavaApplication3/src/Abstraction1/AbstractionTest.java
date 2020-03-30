@@ -2,9 +2,9 @@
 package Abstraction1;
 
 abstract class Employee{
-    private String name;
-    private String adress;
-    private int number;
+    private final String name;
+    private final String adress;
+    private final int number;
     
     public Employee(String name, String adress, int number){
         this.name = name;
@@ -29,7 +29,7 @@ abstract class Employee{
     }
 }
 
-class Salary extends Employee{
+final class Salary extends Employee{
     private double salary;
 
      public Salary(String name, String adress, int number, double salary){
@@ -37,6 +37,7 @@ class Salary extends Employee{
         setSalary(salary);
     }
 
+    @Override
     public void sendSalary(){
         System.out.println("Send salary " + salary + " at " + getAdress() + " to " + getName() + " number " + getNumber());
     }

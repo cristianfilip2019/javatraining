@@ -118,7 +118,7 @@ public class TicTacToe {
         List cross1= Arrays.asList(1, 5, 9);
         List cross2= Arrays.asList(3, 5, 7);
         
-        List<List> winning = new ArrayList<List>();
+        List<List> winning = new ArrayList<>();
         winning.add(topRow);
         winning.add(midRow);
         winning.add(botRow);

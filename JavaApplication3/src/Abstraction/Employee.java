@@ -2,9 +2,9 @@
 package Abstraction;
 
 public abstract class Employee {
-    private String name;
-    private String adress;
-    private int number;
+    private final String name;
+    private final String adress;
+    private final int number;
     
     //Constructing an Employee
     public Employee(String name, String adress, int number){

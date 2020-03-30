@@ -12,9 +12,11 @@ public class HelloWorldAnonymusClasses {
         
         class EnglishGreeting implements HelloWorld{
             String name = "world";
+            @Override
             public void greet(){
                 greetSomeone("world");
             }
+            @Override
             public void greetSomeone(String someone){
                 name = someone;
                 System.out.println("Hello " + name);
@@ -25,20 +27,25 @@ public class HelloWorldAnonymusClasses {
         
         HelloWorld frenchGreeting = new HelloWorld(){
             String name = "tout le monde";
+            @Override
             public void greet(){
                 greetSomeone("tout le monde");
             }
+            @Override
             public void greetSomeone(String someone){
                 name = someone;
                 System.out.println("Salut " + name);
             }
         };
         
-        HelloWorld spanishGreeting = new HelloWorld(){
+        HelloWorld spanishGreeting;
+        spanishGreeting = new HelloWorld(){
             String name = "mundo";
+            @Override
             public void greet(){
                 greetSomeone("mundo");
             }
+            @Override
             public void greetSomeone(String someone){
                 name = someone;
                 System.out.println("Hola " + name);
