@@ -27,6 +27,10 @@ class DeskComputerButton {
     };
     
     private ButtonMarkups markup;
+
+    public ButtonMarkups getMarkup() {
+        return markup;
+    }
     
     public DeskComputerButton(ButtonMarkups markup){
         this.markup = markup;

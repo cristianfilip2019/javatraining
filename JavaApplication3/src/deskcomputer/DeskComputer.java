@@ -28,12 +28,20 @@ class DeskComputer {
     };
     //create display of Desk Computer
     DeskComputerDisplay cd = new DeskComputerDisplay();
-    //method pushkey
-    public void pushkey(DeskComputerButton.ButtonMarkups pushedButtonMarkup){
-        cd.display(pushedButtonMarkup);
-        switch(pushedButtonMarkup){
-            
-        }
+
+    public DeskComputerDisplay getCd() {
+        return cd;
     }
     
+    // ALU
+    private ALU alu = new ALU(this);
+    
+    //method pushkey
+    public void pushkey(DeskComputerButton.ButtonMarkups pushedButtonMarkup){
+        for(DeskComputerButton currentButton:keyboard){
+            if(currentButton.getMarkup() == pushedButtonMarkup){
+                alu.pushkey(currentButton);
+            }
+        }    
+    }
 }
