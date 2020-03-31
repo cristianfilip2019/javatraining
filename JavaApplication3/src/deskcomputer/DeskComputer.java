@@ -37,9 +37,9 @@ class DeskComputer {
     private ALU alu = new ALU(this);
     
     //method pushkey
-    public void pushkey(DeskComputerButton.ButtonMarkups pushedButtonMarkup){
+    public void pushkey(DeskComputerButton.ButtonMarkups markup){
         for(DeskComputerButton currentButton:keyboard){
-            if(currentButton.getMarkup() == pushedButtonMarkup){
+            if(currentButton.getMarkup() == markup){
                 alu.pushkey(currentButton);
             }
         }    

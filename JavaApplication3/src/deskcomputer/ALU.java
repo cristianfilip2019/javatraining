@@ -23,8 +23,8 @@ class ALU {
         this.parent = parent;
     }
     
-    public void pushkey(DeskComputerButton pushedButton){
-        switch(pushedButton.getMarkup()){
+    public void pushkey(DeskComputerButton markup){
+        switch(markup.getMarkup()){
             case KEY_0:
             {
                 if(DeskComputerButton.ButtonMarkups.KEY_0 == operator){
@@ -34,7 +34,7 @@ class ALU {
                     firstOperand = Integer.parseInt(temp);
                 }
                 else{
-                    String temp = String.valueOf(firstOperand);
+                    String temp = String.valueOf(secondOperand);
                     temp.concat("0");
                     parent.getCd().display(temp);
                     secondOperand = Integer.parseInt(temp);
@@ -50,7 +50,7 @@ class ALU {
                     firstOperand = Integer.parseInt(temp);
                 }
                 else{
-                    String temp = String.valueOf(firstOperand);
+                    String temp = String.valueOf(secondOperand);
                     temp.concat("1");
                     parent.getCd().display(temp);
                     secondOperand = Integer.parseInt(temp);
@@ -66,7 +66,7 @@ class ALU {
                     firstOperand = Integer.parseInt(temp);
                 }
                 else{
-                    String temp = String.valueOf(firstOperand);
+                    String temp = String.valueOf(secondOperand);
                     temp.concat("2");
                     parent.getCd().display(temp);
                     secondOperand = Integer.parseInt(temp);
@@ -82,7 +82,7 @@ class ALU {
                     firstOperand = Integer.parseInt(temp);
                 }
                 else{
-                    String temp = String.valueOf(firstOperand);
+                    String temp = String.valueOf(secondOperand);
                     temp.concat("3");
                     parent.getCd().display(temp);
                     secondOperand = Integer.parseInt(temp);
@@ -98,7 +98,7 @@ class ALU {
                     firstOperand = Integer.parseInt(temp);
                 }
                 else{
-                    String temp = String.valueOf(firstOperand);
+                    String temp = String.valueOf(secondOperand);
                     temp.concat("4");
                     parent.getCd().display(temp);
                     secondOperand = Integer.parseInt(temp);
@@ -114,7 +114,7 @@ class ALU {
                     firstOperand = Integer.parseInt(temp);
                 }
                 else{
-                    String temp = String.valueOf(firstOperand);
+                    String temp = String.valueOf(secondOperand);
                     temp.concat("5");
                     parent.getCd().display(temp);
                     secondOperand = Integer.parseInt(temp);
@@ -130,7 +130,7 @@ class ALU {
                     firstOperand = Integer.parseInt(temp);
                 }
                 else{
-                    String temp = String.valueOf(firstOperand);
+                    String temp = String.valueOf(secondOperand);
                     temp.concat("6");
                     parent.getCd().display(temp);
                     secondOperand = Integer.parseInt(temp);
@@ -146,7 +146,7 @@ class ALU {
                     firstOperand = Integer.parseInt(temp);
                 }
                 else{
-                    String temp = String.valueOf(firstOperand);
+                    String temp = String.valueOf(secondOperand);
                     temp.concat("7");
                     parent.getCd().display(temp);
                     secondOperand = Integer.parseInt(temp);
@@ -162,7 +162,7 @@ class ALU {
                     firstOperand = Integer.parseInt(temp);
                 }
                 else{
-                    String temp = String.valueOf(firstOperand);
+                    String temp = String.valueOf(secondOperand);
                     temp.concat("8");
                     parent.getCd().display(temp);
                     secondOperand = Integer.parseInt(temp);
@@ -178,7 +178,7 @@ class ALU {
                     firstOperand = Integer.parseInt(temp);
                 }
                 else{
-                    String temp = String.valueOf(firstOperand);
+                    String temp = String.valueOf(secondOperand);
                     temp.concat("9");
                     parent.getCd().display(temp);
                     secondOperand = Integer.parseInt(temp);
@@ -191,10 +191,15 @@ class ALU {
             {
                 switch(operator){
                     case KEY_PLUS: result = firstOperand + secondOperand;
+                    break;
                     case KEY_MINUS: result = firstOperand - secondOperand;
+                    break;
                     case KEY_MULTIPLY: result = firstOperand * secondOperand;
+                    break;
                     case KEY_DIVIDE: result = firstOperand/secondOperand;
+                    break;
                 }
+                
                 parent.getCd().display(String.valueOf(result));
             }    
         }
