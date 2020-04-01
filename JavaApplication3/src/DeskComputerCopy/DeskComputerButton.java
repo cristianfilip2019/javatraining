@@ -1,7 +1,9 @@
 /*
  * Defines the Desk Computer button.
  */
-package deskcomputer;
+package DeskComputerCopy;
+
+import deskcomputer.*;
 
 /**
  * Defines the Desk Computer button.
@@ -32,7 +34,7 @@ class DeskComputerButton {
         return markup;
     }
     
-    public DeskComputerButton(ButtonMarkups pushedButtonMarkup){
-        this.markup = pushedButtonMarkup;
+    public DeskComputerButton(ButtonMarkups markup){
+        this.markup = markup;
     }
 }
