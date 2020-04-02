@@ -3,7 +3,6 @@
  */
 package DeskComputerCopy;
 
-import deskcomputer.*;
 
 /**
  * Defines the Desk Computer button.

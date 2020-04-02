@@ -3,8 +3,6 @@
  */
 package DeskComputerCopy;
 
-import deskcomputer.*;
-
 /**
  * Create DeskComputer as the encapsulation of all components
  * @author servi

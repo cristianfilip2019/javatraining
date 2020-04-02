@@ -3,8 +3,6 @@
  */
 package DeskComputerCopy;
 
-import deskcomputer.*;
-
 /**
  * ALU is processing all the desk computer operations
  * @author servi
@@ -210,8 +208,7 @@ class ALU {
                     break;
                     case KEY_DIVIDE: result = firstOperand/secondOperand;
                     break;
-                }
-                
+                }               
                 parent.getCd().display(String.valueOf(result));
             }    
         }

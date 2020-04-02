@@ -3,8 +3,6 @@
  */
 package DeskComputerCopy;
 
-import deskcomputer.*;
-
 /**
  * Display of desk computer
  * @author servi

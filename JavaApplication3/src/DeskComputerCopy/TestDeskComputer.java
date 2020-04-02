@@ -3,8 +3,6 @@
  */
 package DeskComputerCopy;
 
-import deskcomputer.*;
-
 /**
  * Testing test computer simulating an add operation.
  * @author servi
