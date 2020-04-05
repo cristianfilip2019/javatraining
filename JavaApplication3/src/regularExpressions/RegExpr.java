@@ -16,13 +16,13 @@ public class RegExpr {
         Scanner scannerRegex = new Scanner(System.in);
         System.out.println("Insert regex or pattern to be searched: ");
         //read the regular expresion
-        String regex = scannerRegex.next();
+        String regex = scannerRegex.nextLine();
         //create a pattern using introduced regular expression
         Pattern pattern = Pattern.compile(regex);
         //read the source string using a new Scanner object
         Scanner scannerSourceString = new Scanner(System.in);
         System.out.println("Insert source string: ");
-        String source = scannerSourceString.next();
+        String source = scannerSourceString.nextLine();
         //create the matcher as result of apllying regex on source string
         Matcher matcher = pattern.matcher(source);
         boolean found = false;
