@@ -17,7 +17,7 @@ public class ThrowKeywordDemo {
         }
     }
     public static void main(String[] args) {
-        checkAge(18);
+        checkAge(15);
     }
     
 }

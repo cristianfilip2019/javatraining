@@ -1,9 +1,9 @@
 
 package javaExceptions;
 
+import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,28 +17,29 @@ public class ListOfNumbers {
             list.add(i);
         }
     }    
-    public void writeList() {
-        PrintWriter out = null;
-        try{ 
-            out = new PrintWriter(new FileWriter("F:\\OneDrive\\desktop\\Outfile.txt"));
-            String outfile = list.toString();
-            outfile = outfile.substring(1, outfile.length()-1);
-            out.write(outfile);
-            out.close();
-            
+
+    public void makeFile() throws IOException{
+        BufferedWriter out = new BufferedWriter(new FileWriter("F:\\OneDrive\\desktop\\Outfile.txt"));
+        String outfile = list.toString();
+        outfile = outfile.substring(1, outfile.length()-1);
+        out.write(outfile);
+        out.close();
+        
+    }
+    
+    public void writeList() { 
+        //try{ 
             for (int i = 0; i < SIZE; i++){
                 System.out.println("Value at : " + i + " = " + list.get(i));
             }
-        } catch (IndexOutOfBoundsException e){
+        /*} catch (IndexOutOfBoundsException e){
                 System.err.println("IndexOutOfBoundsException: " + e.getMessage());
-        } catch(IOException e){
-                System.err.println("Caught IOException: " + e.getMessage());
-        }
-        out.close();
+        }*/
     }
     
-    public static void main(String[] args){
+    public static void main(String[] args) throws IOException{
         ListOfNumbers createList = new ListOfNumbers();
         createList.writeList();
+        createList.makeFile();
     }
 }
