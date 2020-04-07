@@ -22,6 +22,7 @@ public class ListOfNumbers {
         try{ 
             out = new PrintWriter(new FileWriter("F:\\OneDrive\\desktop\\Outfile.txt"));
             String outfile = list.toString();
+            outfile = outfile.substring(1, outfile.length()-1);
             out.write(outfile);
             out.close();
             
