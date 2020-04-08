@@ -76,7 +76,7 @@ public class CalendarExample {
         System.out.println("Duration: " + ns);
         //Period
         LocalDate today = LocalDate.now();
-        LocalDate birthday = LocalDate.of(1968, Month.MAY, 7);
+        LocalDate birthday = LocalDate.of(2017, Month.JUNE,12);
         Period p = Period.between(birthday, today);
         long p2 = ChronoUnit.DAYS.between(birthday, today);
         System.out.println("you are " + p.getYears() + " years " + p.getMonths() + 
