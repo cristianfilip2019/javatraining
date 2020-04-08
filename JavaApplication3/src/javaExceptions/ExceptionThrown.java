@@ -34,6 +34,7 @@ public class ExceptionThrown {
         int b = 0;
         try{
             int i = computeDivision(a, b);
+            int j = divideByZero(1, 0);
         } 
                 //matching ArithmeticException
         catch(ArithmeticException ex){
