@@ -41,9 +41,9 @@ class CheckingAccount {
                                         if(withdrawAmount <= balance){
                                                 balance-=withdrawAmount;
                                                 System.out.println("Balance: " + balance);
-                                        }else{
-                                                int needs = withdrawAmount - balance;
-                                                System.out.println("Balance: " + balance);
+                                        }else{                                               
+                                                System.out.println("Withdraw request exceeds balance.");
+                                                operations();
                                         }      break;
                                 default:
                                         System.out.println("Incorrect operation");
