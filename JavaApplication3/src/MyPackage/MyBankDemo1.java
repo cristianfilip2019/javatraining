@@ -67,11 +67,7 @@ class PinCheck{
                 System.out.println("Insert pin:");
                 Scanner scanPin =new Scanner(System.in);
                 String insertedPin = scanPin.nextLine();                
-                if(insertedPin.equals(pin)){
-                        correctPin = true;
-                }else{
-                        correctPin = false;
-                }
+                correctPin = insertedPin.equals(pin);
                 return correctPin;
         }        
         public boolean getCorrectPin(){
