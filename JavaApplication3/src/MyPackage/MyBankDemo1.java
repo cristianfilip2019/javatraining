@@ -2,7 +2,6 @@
 package MyPackage;
 
 import java.util.Scanner;
-import javaExceptions.*;
 
 public class MyBankDemo1{
         public static void main(String[] args){
@@ -45,7 +44,7 @@ class CheckingAccount {
                                         }else{
                                                 int needs = withdrawAmount - balance;
                                                 System.out.println("Balance: " + balance);
-                                        }       break;
+                                        }      break;
                                 default:
                                         System.out.println("Incorrect operation");
                                         operations();
