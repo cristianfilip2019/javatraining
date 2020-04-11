@@ -21,6 +21,7 @@ class CheckingAccount {
                 PinCheck pinCk = new PinCheck();
                 pinCk.pinChecking();
                 if(pinCk.getCorrectPin()){
+                        System.out.println("Current balance: " + balance);
                         System.out.println("Deposit (d)/ Withdrawal(w) : ");
                         Scanner scanOperation =new Scanner(System.in);
                         char operation = scanOperation.next().charAt(0);
@@ -31,7 +32,7 @@ class CheckingAccount {
                                         int depositAmount = scanDeposit.nextInt();
                                         System.out.println("Depositing: " + depositAmount);
                                         balance += depositAmount;
-                                        System.out.println("Balance: " + balance);
+                                        System.out.println("New balance: " + balance);
                                         break;
                                 case 'w':
                                         System.out.println("Withdraw amount: ");
@@ -40,7 +41,7 @@ class CheckingAccount {
                                         System.out.println("Withdrawing: " + withdrawAmount);
                                         if(withdrawAmount <= balance){
                                                 balance-=withdrawAmount;
-                                                System.out.println("Balance: " + balance);
+                                                System.out.println("New balance: " + balance);
                                         }else{                                               
                                                 System.out.println("Withdraw request exceeds balance.");
                                                 operations();
