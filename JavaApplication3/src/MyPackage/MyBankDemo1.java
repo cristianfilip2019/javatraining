@@ -25,28 +25,31 @@ class CheckingAccount {
                         System.out.println("Deposit (d)/ Withdrawal(w) : ");
                         Scanner scanOperation =new Scanner(System.in);
                         char operation = scanOperation.next().charAt(0);
-                        if(operation == 'd'){
-                                System.out.println("Deposit amount: ");
-                                Scanner scanDeposit = new Scanner(System.in);
-                                int depositAmount = scanDeposit.nextInt();
-                                System.out.println("Depositing: " + depositAmount);
-                                balance += depositAmount;
-                                System.out.println("Balance: " + balance);
-                        }else if(operation == 'w'){
-                                System.out.println("Withdraw amount: ");
-                                Scanner scanWithdraw = new Scanner(System.in);
-                                int withdrawAmount = scanWithdraw.nextInt();
-                                System.out.println("Withdrawing: " + withdrawAmount);
-                                if(withdrawAmount <= balance){
-                                        balance-=withdrawAmount;
+                        switch (operation) {
+                                case 'd':
+                                        System.out.println("Deposit amount: ");
+                                        Scanner scanDeposit = new Scanner(System.in);
+                                        int depositAmount = scanDeposit.nextInt();
+                                        System.out.println("Depositing: " + depositAmount);
+                                        balance += depositAmount;
                                         System.out.println("Balance: " + balance);
-                                }else{
-                                        int needs = withdrawAmount - balance;
-                                        System.out.println("Balance: " + balance);
-                                }                       
-                        }else{
-                                System.out.println("Incorrect operation");
-                                operations();
+                                        break;
+                                case 'w':
+                                        System.out.println("Withdraw amount: ");
+                                        Scanner scanWithdraw = new Scanner(System.in);
+                                        int withdrawAmount = scanWithdraw.nextInt();
+                                        System.out.println("Withdrawing: " + withdrawAmount);
+                                        if(withdrawAmount <= balance){
+                                                balance-=withdrawAmount;
+                                                System.out.println("Balance: " + balance);
+                                        }else{
+                                                int needs = withdrawAmount - balance;
+                                                System.out.println("Balance: " + balance);
+                                        }       break;
+                                default:
+                                        System.out.println("Incorrect operation");
+                                        operations();
+                                        break;
                         }
                 }else{
                         System.out.println("Incorrect pin.");
