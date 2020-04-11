@@ -17,8 +17,7 @@ class CheckingAccount {
         
         public CheckingAccount(int number){
                 this.number=number;
-        }    
-        
+        }           
         public void operations() {
                 PinCheck pinCk = new PinCheck();
                 pinCk.pinChecking();
