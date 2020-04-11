@@ -3,9 +3,7 @@ package javaExceptions;
 
 public class BankDemo{
         public static void main(String[] args){
-                CheckingAccount c = new CheckingAccount(101);
-                System.out.println("Balance: " + c.getBalance());
-                System.out.println("Depositing 500");
+                CheckingAccount c = new CheckingAccount(101);               
                 c.deposit(500.00);
                 System.out.println("Balance: " + c.getBalance());
                 try{
@@ -24,12 +22,13 @@ public class BankDemo{
 
 class CheckingAccount {
         private double balance;
-        private int number;    
+        private int number;
+        public int depositAmount;
         public CheckingAccount(int number){
                 this.number=number;
         }    
-        public void deposit(double amount){
-                balance += amount;
+        public void deposit(double depositAmount){
+                balance += depositAmount;
         }    
         public void withdraw(double amount) throws InsufficientFundsException{
                 if(amount <= balance){
