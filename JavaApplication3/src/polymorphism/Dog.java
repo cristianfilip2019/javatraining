@@ -9,8 +9,9 @@ package polymorphism;
  *
  * @author servi
  */
-public class Animal {
+public class Dog extends Animal{
+    @Override
     public void animalSound(){
-        System.out.println("the animal makes a sound");
-    }       
+        System.out.println("the dog says: woof woof");
+    }    
 }

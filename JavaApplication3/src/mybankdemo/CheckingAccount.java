@@ -15,14 +15,18 @@ public class CheckingAccount {
         
         private int balance = 1000;
         private final int number;
+        private final String pin = "1234";
+        boolean correctPin;
         
         public CheckingAccount(int number){
                 this.number=number;
-        }           
+        }  
+
         public void operations() {
-                PinCheck pinCk = new PinCheck();
-                pinCk.pinChecking();
-                if(pinCk.getCorrectPin()){
+                System.out.println("Insert pin:");
+                Scanner scanPin =new Scanner(System.in);
+                String insertedPin = scanPin.nextLine();                
+                if(insertedPin.equals(pin)){
                         System.out.println("Current balance: " + balance);
                         System.out.println("Deposit (d)/ Withdrawal(w) : ");
                         Scanner scanOperation =new Scanner(System.in);
@@ -57,11 +61,11 @@ public class CheckingAccount {
                         System.out.println("Incorrect pin.");
                         operations();
                 }
+        } 
+        public int getBalance() {
+                return balance;
         }
-                public int getBalance() {
-                        return balance;
-                }
-                public int getNumber(){
-                        return number;
-                }
+        public int getNumber(){
+                return number;
+        }
 }
