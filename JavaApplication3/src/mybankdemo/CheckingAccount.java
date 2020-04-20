@@ -15,8 +15,7 @@ public class CheckingAccount {
         
         private int balance = 1000;
         private final int number;
-        private final String pin = "1234";
-        boolean correctPin;
+        private final String pin = "1234";        
         
         public CheckingAccount(int number){
                 this.number=number;
