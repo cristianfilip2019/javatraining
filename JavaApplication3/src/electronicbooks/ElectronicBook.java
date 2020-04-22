@@ -22,7 +22,7 @@ public class ElectronicBook {
         private FormatOfElectronicBook electronicFormat;
         private YearOfPublication yearOfPublication;
         
-        public ElectronicBook(String title, String isbn, String author, String downloadLink,
+        public void setBookSpecifications(String title, String isbn, String author, String downloadLink,
                 String remarkAndNote, String publisher, double price, FormatOfElectronicBook electronicFormat,
                 YearOfPublication yearOfPublication){
                 this.title = title;

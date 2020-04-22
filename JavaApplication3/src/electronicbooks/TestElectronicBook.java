@@ -10,17 +10,12 @@ package electronicbooks;
 public class TestElectronicBook {
 
         public static void main(String[] args) {
-                EBook javaEBook = new EBook("java", "768945-66", "Ion Creanga", "www.elefant.ro", "excellent book",
-                "Editura Nemira", 50.00, ElectronicBook.FormatOfElectronicBook.PDF,ElectronicBook.YearOfPublication.Y_2011);
-                System.out.println(javaEBook.getTitle());
-                System.out.println(javaEBook.getIsbn());
-                System.out.println(javaEBook.getAuthors());
-                System.out.println(javaEBook.getDownloadLinks());
-                System.out.println(javaEBook.getRemarksAndNotes());
-                System.out.println(javaEBook.getPublisher());
-                System.out.println(javaEBook.getPrice());
-                System.out.println(javaEBook.getElectronicFormat());
-                System.out.println(javaEBook.getYearOfPublication());
+                EBook javaEBook = new EBook();
+                System.out.println("Book number one: " + "\n" + "Title: " + javaEBook.getTitle() + "\n" + "ISBN: " + javaEBook.getIsbn() + 
+                        "\n" + "Authors: " + javaEBook.getAuthors() + "\n" + 
+                        "Download links: " + javaEBook.getDownloadLinks() + "\n" + "Remarks and notes: " + javaEBook.getRemarksAndNotes() + 
+                        "\n" + "Publisher: " + javaEBook.getPublisher() + "\n" + "Price: " + javaEBook.getPrice() + " ron"+ "\n" 
+                        + "Electronic format: " + javaEBook.getElectronicFormat() + "\n" + "Year of publication: " + javaEBook.getYearOfPublication());
         }
         
 }
