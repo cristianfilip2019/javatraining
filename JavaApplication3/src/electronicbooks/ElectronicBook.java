@@ -14,9 +14,9 @@ public class ElectronicBook {
         public enum FormatOfElectronicBook{IBook, Ebook, PDF, WORD, HTML};
         private String title;
         private String isbn;
-        private LinkedList<String> authors = new LinkedList<>();
-        private LinkedList<String> downloadLinks= new LinkedList<>();
-        private LinkedList<String> remarksAndNotes= new LinkedList<>();
+        private final LinkedList<String> authors = new LinkedList<>();
+        private final LinkedList<String> downloadLinks= new LinkedList<>();
+        private final LinkedList<String> remarksAndNotes= new LinkedList<>();
         private String publisher;
         private double price;
         private FormatOfElectronicBook electronicFormat;
