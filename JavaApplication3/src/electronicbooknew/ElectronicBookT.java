@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Electronic Book Class
  */
 package electronicbooknew;
 
@@ -9,7 +7,7 @@ import static java.lang.Double.parseDouble;
 import java.util.LinkedList;
 
 /**
- *
+ * Electronic Book Class
  * @author servi
  */
 public class ElectronicBookT {

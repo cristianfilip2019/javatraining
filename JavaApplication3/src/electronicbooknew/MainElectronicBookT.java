@@ -1,4 +1,6 @@
-
+/*
+ * Main Electronic Books
+ */
 package electronicbooknew;
 
 
@@ -9,7 +11,10 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
-
+/**
+ * Main Electronic Books
+ * @author servi
+ */
 public class MainElectronicBookT {
         public static final String delimiter = ",";
         

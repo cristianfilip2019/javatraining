@@ -1,12 +1,10 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * EBook class.
  */
 package electronicbooknew;
 
 /**
- *
+ * EBook class.
  * @author servi
  */
 public class EBookT extends ElectronicBookT {
