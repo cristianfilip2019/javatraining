@@ -1,7 +1,7 @@
 /*
  * Test ElectronicBook
  */
-package electronicbooks;
+package electronicbooksold;
 
 /**
  * Test ElectronicBook

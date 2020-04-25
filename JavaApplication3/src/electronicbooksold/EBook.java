@@ -1,7 +1,7 @@
 /*
  * EBook class
  */
-package electronicbooks;
+package electronicbooksold;
 
 /**
  * EBook class

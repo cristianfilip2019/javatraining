@@ -1,7 +1,7 @@
 /*
  * Electronic book class
  */
-package electronicbooks;
+package electronicbooksold;
 
 import java.util.LinkedList;
 
