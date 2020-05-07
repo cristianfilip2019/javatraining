@@ -9,7 +9,7 @@ import java.text.*;
  * @author servi
  */
 public class DecimalFormatDemo {
-    static public void customFormat(String pattern, double input){
+    public static void customFormat(String pattern, double input){
         DecimalFormat myFormatter = new DecimalFormat(pattern);
         String output = myFormatter.format(input);
         System.out.println(input + "    "  + pattern + "    " + output);

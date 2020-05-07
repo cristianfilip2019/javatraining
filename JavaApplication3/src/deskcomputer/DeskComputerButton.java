@@ -8,7 +8,7 @@ package deskcomputer;
  * Defines the Desk Computer button.
  * @author servi
  */
-class DeskComputerButton {
+public class DeskComputerButton {
     public static enum ButtonMarkups {
         KEY_0,
         KEY_1,

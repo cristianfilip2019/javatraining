@@ -14,12 +14,10 @@ import java.util.Scanner;
 public class CheckingAccount {
         
         private int balance = 1000;
-        private final int number;
+        
         private final String pin = "1234";        
         
-        public CheckingAccount(int number){
-                this.number=number;
-        }  
+          
 
         public void operations() {
                 System.out.println("Insert pin:");
@@ -64,7 +62,5 @@ public class CheckingAccount {
         public int getBalance() {
                 return balance;
         }
-        public int getNumber(){
-                return number;
-        }
+        
 }

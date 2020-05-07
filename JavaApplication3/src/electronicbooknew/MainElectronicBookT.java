@@ -23,7 +23,7 @@ public class MainElectronicBookT {
         }
         
         public static void main(String[] args) {
-                String csvFile = "C:\\Users\\servi\\Documents\\NetBeansProjects\\javatraining\\JavaApplication3\\src\\electronicbooknew\\ElectronicBookcsv.csv";               
+                String csvFile ="C:\\Users\\servi\\Documents\\NetBeansProjects\\javatraining\\JavaApplication3\\src\\electronicbooknew\\ElectronicBookcsv.csv";               
                 try{
                         File file = new File(csvFile);
                         FileReader fr = new FileReader(file);

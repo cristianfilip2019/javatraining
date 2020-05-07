@@ -7,15 +7,15 @@ package deskcomputer;
  * ALU is processing all the desk computer operations
  * @author servi
  */
-class ALU {
+public class ALU {
     //Desk Computer parent
-    DeskComputer parent;
+    private DeskComputer parent;
     //memory for first operand
     private int firstOperand = 0;
     //memory for second operand
     private int secondOperand = 0;
     //memory for operator
-    DeskComputerButton.ButtonMarkups operator;
+    private DeskComputerButton.ButtonMarkups operator;
     //memory for result
     private int result = 0;
     //ALU constructor

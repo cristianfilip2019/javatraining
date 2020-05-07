@@ -7,7 +7,7 @@ package deskcomputer;
  * Display of desk computer
  * @author servi
  */
-class DeskComputerDisplay {
+public class DeskComputerDisplay {
     public void display(String toDisplay){
         System.out.println(toDisplay);
     }

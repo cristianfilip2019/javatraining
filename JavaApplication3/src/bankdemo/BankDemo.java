@@ -3,7 +3,7 @@ package bankdemo;
 
 public class BankDemo{
         public static void main(String[] args){
-                CheckingAccount c = new CheckingAccount(101);               
+                CheckingAccount c = new CheckingAccount();               
                 c.deposit(500.00);
                 System.out.println("Balance: " + c.getBalance());
                 try{

@@ -11,11 +11,10 @@ package bankdemo;
  */
 public class CheckingAccount {
         private double balance;
-        private final int number;
+        
         public int depositAmount;
-        public CheckingAccount(int number){
-                this.number=number;
-        }    
+        
+          
         public void deposit(double depositAmount){
                 balance += depositAmount;
         }    
@@ -30,7 +29,5 @@ public class CheckingAccount {
         public double getBalance() {
                 return balance;
         }
-        public int getNumber(){
-                return number;
-        }
+        
 }

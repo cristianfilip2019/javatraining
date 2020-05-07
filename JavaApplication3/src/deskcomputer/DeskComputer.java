@@ -7,9 +7,9 @@ package deskcomputer;
  * Create DeskComputer as the encapsulation of all components
  * @author servi
  */
-class DeskComputer {
+public class DeskComputer {
     //create the keyboard of Desk Computer with 15 buttons
-    DeskComputerButton[] keyboard = {
+    private DeskComputerButton[] keyboard = {
         new DeskComputerButton(DeskComputerButton.ButtonMarkups.KEY_0),
         new DeskComputerButton(DeskComputerButton.ButtonMarkups.KEY_1),
         new DeskComputerButton(DeskComputerButton.ButtonMarkups.KEY_2),
@@ -27,7 +27,7 @@ class DeskComputer {
         new DeskComputerButton(DeskComputerButton.ButtonMarkups.KEY_EQUAL),
     };
     //create display of Desk Computer
-    DeskComputerDisplay cd = new DeskComputerDisplay();
+    private DeskComputerDisplay cd = new DeskComputerDisplay();
 
     public DeskComputerDisplay getCd() {
         return cd;
