@@ -1,5 +1,5 @@
 
-package abstraction;
+package abstractexample;
 
 public abstract class Employee {
     private final String name;

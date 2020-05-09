@@ -1,5 +1,5 @@
 
-package abstraction;
+package abstractexample;
 
 public final class Salary extends Employee{
     private double salary;

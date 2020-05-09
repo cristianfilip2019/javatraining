@@ -1,0 +1,2 @@
+acesta e un file pe care vreau sa il printez in consola.
+aceasta este a doua linie a unui file pe care vreau sa il printez in consola.

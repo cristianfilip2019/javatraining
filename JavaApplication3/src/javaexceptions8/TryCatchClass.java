@@ -1,7 +1,7 @@
 /*
  * Testing TryCatch exceptions 
  */
-package javaexceptions;
+package javaexceptions8;
 
 /**
  * Testing TryCatch exceptions 

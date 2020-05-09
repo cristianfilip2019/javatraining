@@ -1,7 +1,7 @@
 
-package abstractiontest;
+package abstractexamplenew;
 
-public class AbstractionTest {
+public class AbstractExampleNew {
 
     public static void main(String[] args) {
         Salary sal = new Salary("Cristian", "Bucuresti", 4, 50000.00);

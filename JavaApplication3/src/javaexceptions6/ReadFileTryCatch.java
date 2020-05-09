@@ -1,5 +1,5 @@
 
-package javaexceptions;
+package javaexceptions6;
 
 import java.io.BufferedReader;
 import java.io.File;

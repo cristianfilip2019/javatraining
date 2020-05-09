@@ -1,14 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package abstractiontest;
 
-/**
- *
- * @author servi
- */
+package abstractexamplenew;
+
 public final class Salary extends Employee{
     private double salary;
 

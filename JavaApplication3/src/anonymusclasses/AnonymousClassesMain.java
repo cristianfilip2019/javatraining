@@ -1,7 +1,7 @@
 
 package anonymusclasses;
 
-public class TestAnonymousClasses {
+public class AnonymousClassesMain {
 
     interface SayHello{
         public void sayHello();

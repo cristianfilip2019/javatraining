@@ -1,7 +1,7 @@
 
-package abstraction;
+package abstractexample;
 
-public class AbstractDemo {
+public class AbstractExampleMain {
 
     public static void main(String[] args) {
         Salary s = new Salary("Cristian Filip", "Bucuresti", 3, 3600.00);
