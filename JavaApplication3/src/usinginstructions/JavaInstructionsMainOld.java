@@ -9,7 +9,7 @@ import java.util.LinkedList;
  *Test java instructions
  * @author servi
  */
-public class TestJavaInstructions {
+public class JavaInstructionsMainOld {
 
     /**
      * @param args the command line arguments
