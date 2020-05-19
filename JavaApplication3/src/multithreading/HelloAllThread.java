@@ -1,5 +1,6 @@
 /*
  * Implementing a new thread extending class Thread
+ * Este necesara implementarea metodei main
  */
 package multithreading;
 
