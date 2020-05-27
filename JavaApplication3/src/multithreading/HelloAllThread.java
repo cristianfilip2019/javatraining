@@ -20,6 +20,5 @@ public class HelloAllThread extends Thread {
                 t.setPriority(6);
                 System.out.println("Thread new priority: " + t.getPriority());
                 t.start();
-        }
-       
+        }       
 }

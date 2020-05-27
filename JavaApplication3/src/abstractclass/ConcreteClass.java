@@ -1,10 +1,15 @@
-
+/*
+        Extends(inherits, is the child, subclass) AbstractClass.
+        Implements and Overrides abstractMethod() inherited from AbstractClass.
+        abstactMethod() prints one string in console.
+ */
 package abstractclass;
 
-public abstract class ConcreteClass {
-        
-    public void concreteMethod(){
-        System.out.println("concrete method of abstract class");
-    }
-    abstract public void abstractMethod();
+public class ConcreteClass extends AbstractClass {
+        //Implements and Overrides abstractMethod inherited from AbstractClass
+        //abstactMethod prints one string in console
+        @Override
+        public void abstractMethod() {
+                System.out.println("implementing abstract method");
+        }
 }
