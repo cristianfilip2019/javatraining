@@ -1,13 +1,12 @@
 /*
         Public class HelloWorldAnonymusClasses.
-        It has main method.
-        Includes 1 interface.
-        includes 1 method.
+        Includes main method.
+        Includes 1 interface.        
  */
-
 package anonymusclasses;
 
-public class HelloWorldAnonymusClasses {        
+public class HelloWorldAnonymusClasses {
+
         //includes 1 interface
         //interface includes 2 methods
         interface HelloWorld {
@@ -16,13 +15,14 @@ public class HelloWorldAnonymusClasses {
 
                 public void greetSomeone(String someone);
         }
-        //method saysHello()
+
+       
         //includes 1 inner class
         //includes 1 anonymus inner class
         public static void main(String[] args) {
-                       //inner class implements class interface
-                       //includes 1 attribute
-                       //includes 2 overriden methods implemented from class interface
+                //inner class implements class interface
+                //includes 1 attribute
+                //includes 2 overriden methods implemented from class interface
                 class EnglishGreeting implements HelloWorld {
 
                         String name;
@@ -37,10 +37,14 @@ public class HelloWorldAnonymusClasses {
                                 name = someone;
                                 System.out.println("Hello " + name);
                         }
+                        public void greetEnglishPeople(){
+                                System.out.println("How are you?");
+                        }
                 }
-
-                HelloWorld englishGreeting = new EnglishGreeting();
-
+                //new object created of type interface HelloWorld with the constructor EnglishGreeting
+                EnglishGreeting englishGreeting = new EnglishGreeting();
+                //anonymus class created from interface HelloWorld
+                //includes 2 overriden methods implemented from class interface
                 HelloWorld frenchGreeting = new HelloWorld() {
                         String name;
 
@@ -54,8 +58,11 @@ public class HelloWorldAnonymusClasses {
                                 name = someone;
                                 System.out.println("Salut " + name);
                         }
+                        
+                        
                 };
-              
+                //anonymus class created from interface HelloWorld
+                //includes 2 overriden methods implemented from class interface
                 HelloWorld spanishGreeting = new HelloWorld() {
                         String name;
 
@@ -72,8 +79,10 @@ public class HelloWorldAnonymusClasses {
                 };
 
                 englishGreeting.greet();
+                englishGreeting.greetEnglishPeople();
                 frenchGreeting.greetSomeone("Fred");
                 spanishGreeting.greet();
                 frenchGreeting.greet();
+                
         }
 }
