@@ -15,7 +15,7 @@ import java.util.logging.Logger;
  * @author servi
  */
 public class SayHello {
-        public static void main(String[] args) {
+        public static void main(String[] args) {               
                 String numberOfParameters = args[0];
                 int numberOfParam = Integer.parseInt(numberOfParameters);
                 try (FileWriter fw = new FileWriter("F:\\OneDrive\\desktop\\MultithreadingFile.txt")) {

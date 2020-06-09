@@ -11,11 +11,13 @@ import java.util.logging.Level;
 
 /**
  * Test multiprocess
+ *
  * @author servi
  */
 public class Multiprocess {
+
         public static void main(String[] args) {
-                try{
+                try {
                         ProcessBuilder pb;
                         //use process builder to start 2 processes multithreading.SayHello with parameter
                         pb = new ProcessBuilder(
@@ -23,7 +25,7 @@ public class Multiprocess {
                                 "-classpath",
                                 "C:\\Users\\servi\\Documents\\NetBeansProjects\\javatraining\\JavaApplication3\\build\\classes",
                                 "multithreading.SayHello",
-                                "3", "Ion", "Gheorghe", "Maria");
+                                "3", "Cristi", "Darius", "Maria");
                         Map<String, String> env = pb.environment();
                         env.put("TEXT_CONGRATS", "felicitari pentru pornirea procesului!");
                         env.remove("OTHERVAR");
@@ -39,10 +41,9 @@ public class Multiprocess {
                         ProcessBuilder pb2;
                         pb2 = new ProcessBuilder("write");
                         Process p4 = pb2.start();*/
-                }
-                catch(IOException ex){
+                } catch (IOException ex) {
                         Logger logger = Logger.getLogger(Multiprocess.class);
                         logger.log(Level.SEVERE, "An IO exception is here!", ex);
                 }
-        }        
+        }
 }

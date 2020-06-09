@@ -11,7 +11,7 @@ public class StudentMain {
         public static void main(String[] args) {
                 //creates an object array of strings of type Student with Student constructor
                 Student[] arr = new Student[5];
-                //adds in index 0 an object Student
+                //adds in array's index an object Student
                 arr[0]= new Student("Darius");
                 arr[1]= new Student("Cristian");
                 arr[2]= new Student("Student1");
