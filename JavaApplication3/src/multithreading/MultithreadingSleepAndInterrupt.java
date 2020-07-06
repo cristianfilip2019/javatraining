@@ -8,7 +8,7 @@ public class MultithreadingSleepAndInterrupt {
         public static void main(String[] args) {
                 //create two different SleepingThread, start them and interrupt one of them
                 SleepingThread st1 = new SleepingThread();
-                SleepingThread st2 = new SleepingThread();
+                SleepingThread1 st2 = new SleepingThread1();
                 st1.start();
                 st2.start();
                 //current thread will sleep for 1.5 seconds

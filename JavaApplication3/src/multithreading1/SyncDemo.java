@@ -14,6 +14,7 @@ public class SyncDemo {
                 
                 //wait for threads to end
                 try{
+                        Thread.sleep(4000);
                         S1.join();
                         S2.join();
                 }
