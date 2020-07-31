@@ -33,7 +33,7 @@ public class SimpleThreads {
 
         public static void main(String args[]) throws InterruptedException {
                 //delay, in miliseconds before we interrupt MessageLoop thread(default one hour)
-                long patience = 1000 * 60 * 60;
+                long patience = 1000*60*60;
 
                 threadMessage("Starting MessageLoop thread");
                 long startTime = System.currentTimeMillis();
@@ -50,7 +50,7 @@ public class SimpleThreads {
                                 threadMessage("tired of waiting!");
                                 t.interrupt();
                                 //shouldn't be long now -- wait indefinitely
-                                t.join();
+                                //t.join();
                         }
                 }
                 threadMessage("finally!");
