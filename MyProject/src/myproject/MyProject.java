@@ -11,9 +11,9 @@ import java.util.logging.Logger;
 public class MyProject {
 
     public static void main(String[] args) {
-        String user = "app";
-        String password = "app";
-        String url = "jdbc:derby://localhost:1527/sample;create=true";
+        String user = "test";
+        String password = "test";
+        String url = "jdbc:derby://localhost:1527/DBnume;create=true";
         String driver = "org.apache.derby.jdbc.ClientDataSource40";
         Connection connection = null;
         Statement statement = null;
@@ -23,7 +23,7 @@ public class MyProject {
             connection = DriverManager.getConnection(url, user, password);
 
             statement = connection.createStatement();
-            resultSet = statement.executeQuery("select * from DERBYDB");
+            resultSet = statement.executeQuery("select * from table1");
             boolean resultSetHasRows = resultSet.next();
             if (resultSetHasRows) {
                 Integer currentID = 0;
